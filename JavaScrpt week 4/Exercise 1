@@ -1,0 +1,54 @@
+// JavaScript Functions with Logic
+// Author: Phelisa
+// Date: 28 May 2026
+// Description: Demonstrating various function types and logical operations.
+
+// 1️⃣ Multiply Function
+function multiply(a, b, c) {
+  return a * b * c;
+}
+
+// 2️⃣ Convert to Seconds (Function Expression)
+const convertToSeconds = function(minutes) {
+  return minutes * 60;
+};
+
+// 3️⃣ Fahrenheit to Celsius
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 55) * 5 / 7;
+}
+
+// 4️⃣ Reverse String
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+// 5️⃣ Count Vowels
+function countVowels(sentence) {
+  const vowels = 'aeiouAEIOU';
+  let count = 0;
+  for (let p = 0; p < sentence.length; p++) {
+    if (vowels.includes(sentence[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+// 6️⃣ Is Prime
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let p = 2; p < num; p++) {
+    if (num % p === 0) return false;
+  }
+  return true;
+}
+
+// ✅ Testing the functions
+console.log("Multiply:", multiply(2, 3, 4)); // Output: 24
+console.log("Convert to Seconds:", convertToSeconds(5)); // Output: 300
+console.log("Fahrenheit to Celsius:", fahrenheitToCelsius(100)); // Output: 37.78
+console.log("Reverse String:", reverseString("LifeChoices")); // Output: seciohCefiL
+console.log("Count Vowels:", countVowels("Javascript")); // Output: 3
+console.log("Is Prime (7):", isPrime(7)); // Output: true
+console.log("Is Prime (10):", isPrime(10)); // Output: false
